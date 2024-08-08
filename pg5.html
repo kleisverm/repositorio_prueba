@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" IE="edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Facturación Electrónica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            color: #333;
+        }
+        .menu li:hover > ul {
+            display: block;
+        }
+        .menu ul ul {
+            display: none;
+            position: absolute;
+            background-color: #f8f8f8;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" IE="edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Facturación Electrónica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            color: #333;
+        }n;
+            align-items: center;
+            background-color: #e0e0e0;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+        .panel .client-info {
+            display: flex;
+            align-items: center;
+        }
+        .panel .client-info img {
+            height: 20px;
+            margin-right: 10px;
+        }
+        .panel .client-buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .panel .client-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         select{
+            width: 106%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            background-color: #fafafafb;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        form input {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+       
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .alerta {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .alerta p {
+            margin: 0;
+        }
+        .alerta .cta {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .alerta .cta button {
+            margin-right: 10px;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Facturación Electrónica</h1>
+    </header>
+  
+       
+    </div>
+    <div class="container">
+        <h2>MENSUALIDADES</h2>
+        <h3>Registrar nueva mensualidad</h3>
+       
+        <form>
+            <div>
+                <label for="Cliente">Cliente:</label>
+                <input type="text" id="Cliente" name="Cliente">
+            </div>
+            Tipo de vehiculo:
+                <br>
+                <label for="Tipo_de_vehiculo"></label>
+                <select id="Tipo_de_vehiculo" name="Tipo_de_vehiculo">
+                    
+                    <option value="Moto">Moto</option>
+                    <option value="Carro ">Carro</option>
+                    
+                </select>
+            <div>
+                
+            <form>
+                
+            </div>
+            <div>
+                <label for="Placa del vehiculo">Placa del vehiculo:</label>
+                <input type="text" id="Placa del vehiculo" name="Placa del vehiculo">
+            </div>
+            <div>
+                <label for="dia">Fecha de inicio  mensualidad:</label>
+                <input type="text" id="dia" name="dia">
+            </div>
+            <div>
+                <label for="dia">Fecha de vencimiento mensualidad:</label>
+                <input type="text" id="dia" name="dia">
+            </div>
+        </form>
+        
+        <div class="cta">
+            
+            
+            <button type="button" onclick="Registrar()">Registrar</button>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
